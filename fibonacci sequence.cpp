@@ -1,18 +1,16 @@
-// Fibonacci Series using Recursion 
-#include <bits/stdc++.h> 
-using namespace std; 
+#include<iostream>
+using namespace std;
 
-int fib(int n) 
-{ 
-	if (n <= 1) 
-		return n; 
-	return fib(n - 1) + fib(n - 2); 
-} 
-
-int main() 
-{ 
-	int n = 9; 
-	cout << fib(n); 
-	getchar(); 
-	return 0; 
-} 
+int main(){int n;
+cout<<" what is the number of terms in the fibonacci series "<<endl;
+           cin >> n;
+    int a = 0;
+    int b = 1;
+    cout<<a<<" "<<b<<" ";
+    for(int i = 2; i<n ; i++){    // i starting from 2 as we already printed 0 and 1
+          int next = a + b;       // i<n because starting from 0 so 1 term will be extra if i<=n
+          cout<<next<<" ";
+          a = b;
+          b = next;
+    }
+}

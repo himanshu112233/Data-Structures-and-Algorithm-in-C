@@ -1,0 +1,17 @@
+{
+    "Full C++ Structure": {
+        "prefix": "main",
+        "body": [
+            "#include <iostream>",
+            "",
+            "using namespace std;",
+            "",
+            "int main() {",
+            "    cout << \"Hello, World!\" << endl;",
+            "    return 0;",
+            "}"
+        ],
+        "description": "Basic C++ program structure with iostream"
+    }
+}
+
